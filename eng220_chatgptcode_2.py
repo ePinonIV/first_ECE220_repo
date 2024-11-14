@@ -15,8 +15,8 @@ import altair as alt
 st.title("CSV Data Graphing App")
 
 # Upload CSV file
-#uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
-uploaded_file = "C:\Users\skeeb\OneDrive\Desktop\School\UNM\PENG\FlowData-2024-11-12.csv"
+uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+#uploaded_file = "C:\Users\skeeb\OneDrive\Desktop\School\UNM\PENG\FlowData-2024-11-12.csv"
 
 if uploaded_file:
     # Read the CSV file
