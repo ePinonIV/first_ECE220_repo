@@ -20,7 +20,7 @@ st.title("Water Supply Data Visualization App")
 #if uploaded_file is not None:
 if 1 == 1:
     # Read the CSV file
-    data = pd.read_csv('NewMexico_Data_V3')
+    data = pd.read_csv('NewMexico_Data_V3.csv')
     st.write("### Data Preview")
     st.dataframe(data)
 
