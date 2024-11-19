@@ -21,7 +21,10 @@ st.title("Water Supply Data Visualization App")
 if 1 == 1:
     # Read the CSV file
     data = pd.read_csv('NewMexico_Data_V3.csv')
-    st.write("### Data Preview")
+    #st.write("### Data Preview")
+    st.markdown('<p style="color:blue; font-size:20px;">### Data Preview.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color:blue; font-size:20px;">This is blue text.</p>', unsafe_allow_html=True)
+
     st.dataframe(data)
 
     # Dropdown for selecting columns
