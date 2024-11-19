@@ -12,14 +12,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title("CSV Data Visualization App")
+st.title("Water Supply Data Visualization App")
 
 # File uploader for CSV
-uploaded_file = st.file_uploader("ratings.csv", type=["csv"])
+#uploaded_file = st.file_uploader("ratings.csv", type=["csv"])
 
 if uploaded_file is not None:
     # Read the CSV file
-    data = pd.read_csv(uploaded_file)
+    data = pd.read_csv('NewMexico_Data_V3')
     st.write("### Data Preview")
     st.dataframe(data)
 
