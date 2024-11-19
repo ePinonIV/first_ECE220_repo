@@ -18,7 +18,7 @@ st.title("Water Supply Data Visualization App")
 #uploaded_file = st.file_uploader("ratings.csv", type=["csv"])
 
 #if uploaded_file is not None:
-if 1 = 1:
+if 1 == 1:
     # Read the CSV file
     data = pd.read_csv('NewMexico_Data_V3')
     st.write("### Data Preview")
