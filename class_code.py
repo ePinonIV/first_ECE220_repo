@@ -22,8 +22,7 @@ if 1 == 1:
     # Read the CSV file
     data = pd.read_csv('NewMexico_Data_V3.csv')
     #st.write("### Data Preview")
-    st.markdown('<p style="color:blue; font-size:20px;">### Data Preview.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="color:blue; font-size:20px;">This is blue text.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color:blue; font-size:30px;">Data Preview.</p>', unsafe_allow_html=True)
 
     st.dataframe(data)
 
@@ -54,26 +53,28 @@ if 1 == 1:
             ax.bar(data[x_column], data[y_column])
             ax.set_title(f"{y_column} vs {x_column} (Bar Chart)")
 
-        elif graph_type == "Pie":
+        #elif graph_type == "Pie":
             # Pie chart only makes sense for single-column data
-            if len(data[x_column].unique()) <= 10:  # Limit to 10 unique categories for readability
-                plt.pie(
-                    data[y_column],
-                    labels=data[x_column],
-                    autopct='%1.1f%%',
-                    startangle=90,
+        #    if len(data[x_column].unique()) <= 10:  # Limit to 10 unique categories for readability
+        #        plt.pie(
+        #            data[y_column],
+        #            labels=data[x_column],
+        #            autopct='%1.1f%%',
+        #            startangle=90,
                 )
-                plt.title(f"{y_column} (Pie Chart)")
-            else:
-                st.error("Pie chart requires fewer unique categories in the X-axis.")
+        #        plt.title(f"{y_column} (Pie Chart)")
+        #    else:
+        #        st.error("Pie chart requires fewer unique categories in the X-axis.")
 
-        if graph_type != "Pie":
-            ax.set_xlabel(x_column)
-            ax.set_ylabel(y_column)
-            st.pyplot(fig)
-        else:
-            st.pyplot(plt)
+        #if graph_type != "Pie":
+        #    ax.set_xlabel(x_column)
+        #    ax.set_ylabel(y_column)
+        #    st.pyplot(fig)
+        #else:
+        st.pyplot(plt)
 
-    st.write("Tip: Ensure the selected columns are numeric for meaningful plots.")
+   # st.write("Tip: Ensure the selected columns are numeric for meaningful plots.")
+    st.markdown('<p style="color:red; font-size:20px;">Tip: Ensure the selected columns are numeric for meaningful plots.</p>', unsafe_allow_html=True)
+
 else:
     st.info("Please upload a CSV file to get started.")
