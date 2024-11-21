@@ -61,7 +61,7 @@ if 1 == 1:
         #            labels=data[x_column],
         #            autopct='%1.1f%%',
         #            startangle=90,
-                )
+        #        )
         #        plt.title(f"{y_column} (Pie Chart)")
         #    else:
         #        st.error("Pie chart requires fewer unique categories in the X-axis.")
