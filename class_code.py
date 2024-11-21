@@ -29,7 +29,7 @@ if 1 == 1:
 
     # Dropdown for selecting columns
     columns = data.columns.tolist()
-    #columns = data2.columns.tolist()
+    columns = data2.columns.tolist()
     x_column = st.selectbox("Select X-axis column", columns)
     y_column = st.selectbox("Select Y-axis column", columns)
 
