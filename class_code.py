@@ -44,7 +44,7 @@ if 1 == 1:
         fig, ax = plt.subplots()
 
         if graph_type == "Line":
-            ax.plot(data2[x_column], data2[y_column], marker='o')
+            ax.plot(data[x_column], data[y_column], marker='o')
             ax.set_title(f"{y_column} vs {x_column} (Line Plot)")
 
         elif graph_type == "Scatter":
