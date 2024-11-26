@@ -1,5 +1,3 @@
-# First ECE220 Repository
-### Elfego Pinon IV
-- This is the GitHub repository I have created for ECE220 on 9/19/24
-
-- This is a change made on the feature branch 9/24/24
+# ENG220 Group 1 Dashboard
+### Water Supply Data Visualization App - <insert_link_here>
+This repository contains all of the files necessary to run out Streamlit visualization for our collected data on water supply and weather in NM. This includes data from the county, city, and state.
