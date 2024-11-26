@@ -7,7 +7,7 @@ import seaborn as sns
 st.title("Water Data Viewer for New Mexico")
 
 # Load the dataset directly (assuming it is in the same directory)
-file_name = "NewMexico_Data.xlsx"
+file_name = "NewMexico_Data1.xlsx"
 
 try:
     # Read the Excel file
